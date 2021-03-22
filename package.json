@@ -1,0 +1,24 @@
+{
+  "name": "hrms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --watch '**/*.js' --ignore '**/*.spec.js' --exec 'node' app.js",
+    "start": "./node_modules/.bin/serverless offline -s dev",
+    "debug": "set SLS_DEBUG=* && node --inspect /usr/local/lib/node_modules/serverless/bin/serverless offline -s dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "serverless-offline": "^6.8.0"
+  },
+  "dependencies": {
+    "aws-lambda-fastify": "^1.4.4",
+    "fastify": "^3.14.0",
+    "serverless-http": "^2.7.0"
+  }
+}
