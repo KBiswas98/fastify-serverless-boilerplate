@@ -3,7 +3,7 @@ frameworkVersion: "2"
 
 custom:
   serverless-offline:
-    httpPort: 5000
+    httpPort: ${self:custom.secrets.LOCAL_PORT}
   secrets: ${file(secrets.json)}
 
 provider:
