@@ -5,9 +5,9 @@
   "main": "handler.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --watch '**/*.js' --ignore '**/*.spec.js' --exec 'node' app.js",
-    "start": "./node_modules/.bin/serverless offline -s dev",
-    "debug": "set SLS_DEBUG=* && node --inspect /usr/local/lib/node_modules/serverless/bin/serverless offline -s dev"
+    "dev": "MODE=nodemon nodemon --watch '**/*.js' --ignore '**/*.spec.js' --exec 'node' app.js",
+    "start": "./node_modules/.bin/serverless offline -s development",
+    "debug": "set SLS_DEBUG=* && node --inspect /usr/local/lib/node_modules/serverless/bin/serverless offline -s development"
   },
   "keywords": [],
   "author": "",
